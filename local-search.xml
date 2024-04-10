@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>神奇</title>
+    <link href="/2024/04/10/%E7%A5%9E%E5%A5%87/"/>
+    <url>/2024/04/10/%E7%A5%9E%E5%A5%87/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在家待了几天，前天晚上回来，回家没带电脑，就把平板带回去了，估摸着一个平板就够学了。当然实际上啥也没学。晚上回来的时候，和室友们吃了烧烤，吃到2点，聊天聊嗨到三点。所以躺一天也显得理所当然。今天还是睡了个懒床。中午打扫完卫生后，一时兴起，反正也没啥玩的，再加上四月出的好看新番已经追完了，就想着，要不再搞一个网站吧。这个博客想写点啥就写点啥，但估计以后投简历的时候不太合适。</p><p>还是打算用hexo主题的框架，通过git来部署。本来以为会很简单的，结果还是遇到了很多大大小小的问题。不过大多都能在网上的基础教程里找到对应的解答，最难办的是这个报错：</p><p><img src="/img/config/git/2.png"></p><p><code>hexo s</code>、<code>hexo g</code>，都没有问题，但唯独<code>hexo d</code>部署的时候出现了这种报错。即我的第一个github账户SpecterLLL没有新博客仓库的读写权限，然后还有spawn failed的报错。反复确认新旧仓库的公钥我都生成并已经粘贴到了各自账户的ssh keys中之后，我就想办法把我目前所用的Specter账户转变为新的spectrumzero账户，这样一来就应该可以顺利读写新的仓库了。</p><p>因为对git一窍不通，所以在网上找了很多很多帖子。有说在git bash（或其它命令行界面）执行<code>git config --global user.name &quot;myname&quot;</code>和<code>git config --global user.email &quot;myemail&quot;</code>的，但是这一类操作(不论是否加上global，不论是否清除了全局配置)都行不通，没有根本的改动，依旧报一样的错误。然后也有帖子说需要在.ssh文件夹下配置config文件，如</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs text">#默认账号，这里的id_rsa是旧账户所对应的公钥文件<br>Host github.com #别名<br>    HostName github.com #实际名<br>    User git<br>    IdentityFile ~/.ssh/id_rsa<br><br>#账号二,这里的zero是新账户所对应的公钥文件<br>Host spectrumzero.github.com<br>    HostName github.com<br>  User git<br>  IdentityFile ~/.ssh/zero<br></code></pre></td></tr></table></figure><p>这里还有一些曲折的地方。就是我应该是在设置这里的config文件前，偶然间把id_rsa给覆盖了。在我只有一个博客的时候，我用的qq邮箱，我的新账户用的是谷歌邮箱，而我在创建新的秘钥的时候，没有给这个新邮箱的秘钥自主命名，导致覆盖了原有的公钥文件。反而我的qq邮箱的秘钥文件，我倒是自己命了名做了区分。</p><p>在覆盖之后，新博客的问题居然解决了。当然我当时是感到很莫名其妙的。</p><p>然而，当我回到旧的仓库，报错就变成了：</p><p><img src="/img/config/git/5.png"></p><p>巨搞。所以还是回到了原点。</p><p>之后，不管我怎么在第二个账号里做排列组合（换别名，换identityfile）都不管用。心灰意冷，想着要不要到git gui里面看看，然后发现这里的sshkey，一方面是只读的，一方面已经变为google邮箱。而之前我肯定是用的qq邮箱的。看到这一路径，为了恢复原样，理所当然地我就要去将这个对应的id_rsa给覆盖。所以拷贝了qq邮箱的秘钥文件，重命名为id_rsa并覆盖，果然在git gui里的sshkey变成了最初始的阶段。</p><p><img src="/img/config/git/3.png"><br><img src="/img/config/git/4.png"></p><p>这个时候，旧仓库的报错没有了！而问题原封不动地呈现在我面前：新仓库跟初始的报错一模一样！换而言之，我操作git的账户，又变回了SpecterLLL。</p><p><img src="/img/config/git/2.png"></p><p>这就给我切换账户提供了一种思路，因为在config文件中，第一个账户的配置里的identityfile路径所指向的文件，恰恰就是git gui的那个默认路径文件。有没有一种可能，是我通过改变id_rsa，恰好就改变了第一个账户所指向的文件的内容？重点可能在第一个配置上，而账号二，则改不改都没有很大的意义?</p><p>于是，我就试着将id_rsa换成了其它的公钥文件。id_rsa是我的qq秘钥，而zero则是我的谷歌秘钥，为了便于区分，我拷贝了一份id_rsa，并重命名为specter，以此作为旧仓库的秘钥。这样一来，我只需要改变第一个账户的配置，就可以完成账户的切换。最终结果也是如此。而第二个账号的配置，直接全部注释掉即可。</p><p><img src="/img/config/git/1.png"></p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs text">#默认账号，修改最后一行的specter为zero，即可完成切换，反之亦然。<br>Host github.com<br>    HostName github.com<br>    User git<br>    IdentityFile ~/.ssh/zero<br><br>#第二个新账号,注释掉<br>#Host spectrumzero.github.com<br>#HostName github.com<br>#User git<br>#IdentityFile ~/.ssh/zero<br></code></pre></td></tr></table></figure><p>思路虽然有点怪，但也算是解决了问题。git学起来！</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>日志</category>
+      
+      <category>git</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>心</title>
     <link href="/2024/04/04/%E5%BF%83/"/>
     <url>/2024/04/04/%E5%BF%83/</url>
