@@ -23,13 +23,13 @@
 <meta property="og:site_name" content="LLL&#39;s Specter">
 <meta property="og:description" content="差点就燃不起来了。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://spectrieu.github.io/img/rc10.png">
+<meta property="og:image" content="https://spectrieu.github.io/img/pre/rc/rc10.png">
 <meta property="article:published_time" content="2023-12-07T09:23:45.000Z">
-<meta property="article:modified_time" content="2023-12-11T12:32:06.517Z">
+<meta property="article:modified_time" content="2024-04-11T03:36:10.391Z">
 <meta property="article:author" content="SpecterLLL">
 <meta property="article:tag" content="配置">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://spectrieu.github.io/img/rc10.png">
+<meta name="twitter:image" content="https://spectrieu.github.io/img/pre/rc/rc10.png">
   
   
   
@@ -209,7 +209,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/rc10.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/pre/rc/rc10.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -308,34 +308,34 @@
 <h2 id="2-利用scoop安装cmake"><a href="#2-利用scoop安装cmake" class="headerlink" title="2.利用scoop安装cmake"></a>2.利用scoop安装cmake</h2><figure class="highlight node-repl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs node-repl"><span class="hljs-meta prompt_">&gt;</span> <span class="language-javascript">scoop install cmake </span><br><span class="hljs-meta prompt_">&gt;</span> <span class="language-javascript">cmake version </span><br></code></pre></td></tr></table></figure>
 
 <p>因为cmake本来就在main库里面，因此在安装scoop的同时就会下载main库，因此可以上述命令直接获取。但对于那些不在主库里的软件，就需要调取别的库。在上述的博客中有相关的命令，也可以直接<code>&gt; scoop help</code>来了解相关信息。</p>
-<p><img src="/img/20231207.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/pre/num/20231207.png" srcset="/img/loading.gif" lazyload></p>
 <p>在安装scoop或用scoop安装软件时候，可能对科学上网环境有所要求。</p>
-<h2 id="3-在vscode中安装c-c-、cmake、cmake-tools、code-runner扩展"><a href="#3-在vscode中安装c-c-、cmake、cmake-tools、code-runner扩展" class="headerlink" title="3.在vscode中安装c&#x2F;c++、cmake、cmake tools、code runner扩展"></a>3.在vscode中安装c&#x2F;c++、cmake、cmake tools、code runner扩展</h2><p>在vscode的扩展商店中安装以上的插件。特别一提的有两点，第一是c++的版本，推荐使用<code>v 1.8.4</code>的版本，这个版本可以帮助我们自动生成launch.json文件，方便执行文件的配置。<br><img src="/img/20231207a.png" srcset="/img/loading.gif" lazyload><br>在初次安装完之后，切换版本即可。<br><img src="/img/20231207b.png" srcset="/img/loading.gif" lazyload><br>第二个则是code runner，同样建议安装，也是为了方便后续的配置乃至code run。</p>
-<h2 id="4-创建文件夹"><a href="#4-创建文件夹" class="headerlink" title="4.创建文件夹"></a>4.创建文件夹</h2><p>我是吃了这个的血亏。源文件的文件路径，一定不能包含中文，不然会报出各种各样的错误，而你会花费大量的时间在这个上面。比如这个：<br><img src="/img/error1.png" srcset="/img/loading.gif" lazyload><br>网上的解决方案有的说修改系统编码，<code>win r</code>之后输入<code>intl.cpl</code>，之后在<code>管理</code>界面更改系统区域设置，勾选<code>beta</code>，重启电脑即可。这种方法确实可以，但是如果我用了这个方法，原先的在visual studio里面编写的源文件就全部乱码了——这个编码真的折磨我几天，下面再说这个。</p>
-<p>那么我是怎么解决这个问题的？首先我没有去勾选beta改变系统编码，而是看到了这一一个回答：<br><img src="/img/sln1.png" srcset="/img/loading.gif" lazyload><br>我恍然大悟。我之前不知道为什么，把c:&#x2F;desktop改为了c:&#x2F;桌面。而我的文件夹所在的路径包含了中文字符。这导致了各种各样让人头皮发麻的抽象问题。除了上面这个，还有cin无法向字符串传入数据的问题，乱码问题……这些问题真的会搞人心态。</p>
+<h2 id="3-在vscode中安装c-c-、cmake、cmake-tools、code-runner扩展"><a href="#3-在vscode中安装c-c-、cmake、cmake-tools、code-runner扩展" class="headerlink" title="3.在vscode中安装c&#x2F;c++、cmake、cmake tools、code runner扩展"></a>3.在vscode中安装c&#x2F;c++、cmake、cmake tools、code runner扩展</h2><p>在vscode的扩展商店中安装以上的插件。特别一提的有两点，第一是c++的版本，推荐使用<code>v 1.8.4</code>的版本，这个版本可以帮助我们自动生成launch.json文件，方便执行文件的配置。<br><img src="/img/pre/num/20231207a.png" srcset="/img/loading.gif" lazyload><br>在初次安装完之后，切换版本即可。<br><img src="/img/pre/num/20231207b.png" srcset="/img/loading.gif" lazyload><br>第二个则是code runner，同样建议安装，也是为了方便后续的配置乃至code run。</p>
+<h2 id="4-创建文件夹"><a href="#4-创建文件夹" class="headerlink" title="4.创建文件夹"></a>4.创建文件夹</h2><p>我是吃了这个的血亏。源文件的文件路径，一定不能包含中文，不然会报出各种各样的错误，而你会花费大量的时间在这个上面。比如这个：<br><img src="/img/pre/demo/error1.png" srcset="/img/loading.gif" lazyload><br>网上的解决方案有的说修改系统编码，<code>win r</code>之后输入<code>intl.cpl</code>，之后在<code>管理</code>界面更改系统区域设置，勾选<code>beta</code>，重启电脑即可。这种方法确实可以，但是如果我用了这个方法，原先的在visual studio里面编写的源文件就全部乱码了——这个编码真的折磨我几天，下面再说这个。</p>
+<p>那么我是怎么解决这个问题的？首先我没有去勾选beta改变系统编码，而是看到了这一一个回答：<br><img src="/img/pre/demo/sln1.png" srcset="/img/loading.gif" lazyload><br>我恍然大悟。我之前不知道为什么，把c:&#x2F;desktop改为了c:&#x2F;桌面。而我的文件夹所在的路径包含了中文字符。这导致了各种各样让人头皮发麻的抽象问题。除了上面这个，还有cin无法向字符串传入数据的问题，乱码问题……这些问题真的会搞人心态。</p>
 <p>总之，确保文件路径没有特殊字符。</p>
 <h2 id="5-文件的编码问题"><a href="#5-文件的编码问题" class="headerlink" title="5.文件的编码问题"></a>5.文件的编码问题</h2><p>上面说到我需要在不改变系统编码的情况下，在vscode里面写cpp文件。首先是需要确保文件的路径不含有中文字符。把这个问题纠正了之后，后面的编码的配置就不会有很多问题了。</p>
 <p>在打开一个文件夹之后，由于系统编码没有改变，因此在vscode里面还是需要使用GBK编码，而不是UTF8。</p>
-<p>修改某一文件夹的默认编码方式：<br><img src="/img/setting01.png" srcset="/img/loading.gif" lazyload><br><img src="/img/setting02.png" srcset="/img/loading.gif" lazyload></p>
-<p>然后在搜索栏搜索：<code>setting.json</code>并打开。<br>打开后，在最上方写上图中第一行代码即可。把”utf8”换成”gbk”就好了。<br><img src="/img/setting03.png" srcset="/img/loading.gif" lazyload><br>我是因为目前所在的文件夹原先的编码方式为utf-8，如果换成gbk，会有大量的乱码，就干脆继续用utf-8了。总之，编码出问题了是很难受的一件事。但是小心谨慎一点，也不是很大的问题。在一开始注意到了，以后就不会有很多问题。</p>
-<p>当然，也可以直接点击下方修改单个文件的编码：<br><img src="/img/setting04.png" srcset="/img/loading.gif" lazyload><br>“通过编码重新打开”即可。<br>我是因为考虑到未来还可能需要用到visual studio，至少还要看以前写的cpp文件，所以统一用的gbk编码来写代码。它也支持中文字符的输出。</p>
+<p>修改某一文件夹的默认编码方式：<br><img src="/img/pre/demo/setting01.png" srcset="/img/loading.gif" lazyload><br><img src="/img/pre/demo/setting02.png" srcset="/img/loading.gif" lazyload></p>
+<p>然后在搜索栏搜索：<code>setting.json</code>并打开。<br>打开后，在最上方写上图中第一行代码即可。把”utf8”换成”gbk”就好了。<br><img src="/img/pre/demo/setting03.png" srcset="/img/loading.gif" lazyload><br>我是因为目前所在的文件夹原先的编码方式为utf-8，如果换成gbk，会有大量的乱码，就干脆继续用utf-8了。总之，编码出问题了是很难受的一件事。但是小心谨慎一点，也不是很大的问题。在一开始注意到了，以后就不会有很多问题。</p>
+<p>当然，也可以直接点击下方修改单个文件的编码：<br><img src="/img/pre/demo/setting04.png" srcset="/img/loading.gif" lazyload><br>“通过编码重新打开”即可。<br>我是因为考虑到未来还可能需要用到visual studio，至少还要看以前写的cpp文件，所以统一用的gbk编码来写代码。它也支持中文字符的输出。</p>
 <h2 id="6-实际编写一个c-源文件"><a href="#6-实际编写一个c-源文件" class="headerlink" title="6.实际编写一个c++源文件"></a>6.实际编写一个c++源文件</h2><p>在安装好了cmake和vscode里面的插件之后，就可以在vscode里面编译cpp文件了。<br>首先用vscode打开新建好的空白文件夹，注意文件夹的路径不能含有特殊字符。<br>然后在空白处使用使用快捷键<code>ctrl+shift+p</code>，如图在上方输入：</p>
-<p><img src="/img/cmake01.png" srcset="/img/loading.gif" lazyload><br>然后点击<br><img src="/img/demo1.png" srcset="/img/loading.gif" lazyload><br>下面这个显示“未找到”，按<code>escape</code>键，就会自动生成一个cmakelist。该文件告诉CMake如何构建项目。<br><img src="/img/demo2.png" srcset="/img/loading.gif" lazyload><br>之后输入项目名称然后<code>enter</code>，创建c++的可执行文件即可。<br><img src="/img/demo3.png" srcset="/img/loading.gif" lazyload><br><img src="/img/demo4.png" srcset="/img/loading.gif" lazyload><br><img src="/img/demo5.png" srcset="/img/loading.gif" lazyload></p>
-<p>之后的文件夹长这样。<br><img src="/img/demo6.png" srcset="/img/loading.gif" lazyload><br>第一行需要将版本更新到3.20.0或以上，不然会报错。<br>这样之后，就可以在main.cpp里面写代码了。</p>
-<h2 id="7-运行文件"><a href="#7-运行文件" class="headerlink" title="7.运行文件"></a>7.运行文件</h2><p>写完之后，可以点击该图标运行，或者使用相应的快捷键<code>ctrl+alt+n</code>：<br><img src="/img/demo7.png" srcset="/img/loading.gif" lazyload></p>
-<p>也可以换一种方式运行：<br><img src="/img/demo8.png" srcset="/img/loading.gif" lazyload><br>然后都勾选第一个即可<br><img src="/img/demo9.png" srcset="/img/loading.gif" lazyload><br><img src="/img/demo10.png" srcset="/img/loading.gif" lazyload></p>
-<p>以第二种方式运行成功之后，会在文件夹里看到有一个新的vscode文件夹，点开会发现launch.json和task.json这两个配置文件。然后可以在launch.json里面将这一行的<code>false</code>改为<code>true</code>,这样就可以调用外部终端：<br><img src="/img/demo11.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/pre/demo/cmake01.png" srcset="/img/loading.gif" lazyload><br>然后点击<br><img src="/img/pre/demo/demo1.png" srcset="/img/loading.gif" lazyload><br>下面这个显示“未找到”，按<code>escape</code>键，就会自动生成一个cmakelist。该文件告诉CMake如何构建项目。<br><img src="/img/pre/demo/demo2.png" srcset="/img/loading.gif" lazyload><br>之后输入项目名称然后<code>enter</code>，创建c++的可执行文件即可。<br><img src="/img/pre/demo/demo3.png" srcset="/img/loading.gif" lazyload><br><img src="/img/pre/demo/demo4.png" srcset="/img/loading.gif" lazyload><br><img src="/img/pre/demo/demo5.png" srcset="/img/loading.gif" lazyload></p>
+<p>之后的文件夹长这样。<br><img src="/img/pre/demo/demo6.png" srcset="/img/loading.gif" lazyload><br>第一行需要将版本更新到3.20.0或以上，不然会报错。<br>这样之后，就可以在main.cpp里面写代码了。</p>
+<h2 id="7-运行文件"><a href="#7-运行文件" class="headerlink" title="7.运行文件"></a>7.运行文件</h2><p>写完之后，可以点击该图标运行，或者使用相应的快捷键<code>ctrl+alt+n</code>：<br><img src="/img/pre/demo/demo7.png" srcset="/img/loading.gif" lazyload></p>
+<p>也可以换一种方式运行：<br><img src="/img/pre/demo/demo8.png" srcset="/img/loading.gif" lazyload><br>然后都勾选第一个即可<br><img src="/img/pre/demo/demo9.png" srcset="/img/loading.gif" lazyload><br><img src="/img/pre/demo/demo10.png" srcset="/img/loading.gif" lazyload></p>
+<p>以第二种方式运行成功之后，会在文件夹里看到有一个新的vscode文件夹，点开会发现launch.json和task.json这两个配置文件。然后可以在launch.json里面将这一行的<code>false</code>改为<code>true</code>,这样就可以调用外部终端：<br><img src="/img/pre/demo/demo11.png" srcset="/img/loading.gif" lazyload></p>
 <p>但是即便调用了外部终端，使用快捷键<code>ctrl+f5</code>采用第二种运行方式运行的时候，外部终端还是会有一些问题。第一种方式运行也只支持在下方那个集成终端里面输出。</p>
 <p>如果要在这个文件夹中写多个cpp文件，其实直接写也是可以的。可以编译可以运行。但是这样一来好像cmakelist就没有啥作用。之前我不能直接运行的原因？其实这个我绕了很久，也找到了相关的<a target="_blank" rel="noopener" href="https://ain-crad.github.io/2019/04/03/Learn-CMake-2-%E5%A4%9A%E6%96%87%E4%BB%B6-%E7%9B%AE%E5%BD%95/">博客文章</a>,然后也的确解决了问题。但是，那是我在系统编码为utf8而不是gbk的情况下。之后我换回了gbk编码，结果是完全不能运行。为什么呢？哦，其实还是因为文件的路径有中文。我改变了文件夹的路径之后，发现不用上述博主的方法，也可以满足我目前的需求。cmakelist对于处理某些问题肯定是必要的，只是我现在似乎没有必要去纠结这些问题。</p>
-<p><img src="/img/ly6.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/img/pre/ly/ly6.png" srcset="/img/loading.gif" lazyload></p>
 <h1 id="方式二：利用MinGw来构建一个c-项目"><a href="#方式二：利用MinGw来构建一个c-项目" class="headerlink" title="方式二：利用MinGw来构建一个c++项目"></a><font size=6>方式二：利用MinGw来构建一个c++项目</font></h1><h2 id="1-安装scoop命令行工具-1"><a href="#1-安装scoop命令行工具-1" class="headerlink" title="1.安装scoop命令行工具"></a>1.安装scoop命令行工具</h2><p>和上述过程一样。</p>
 <h2 id="2-利用scoop安装MinGw"><a href="#2-利用scoop安装MinGw" class="headerlink" title="2.利用scoop安装MinGw"></a>2.利用scoop安装MinGw</h2><p>和上述过程一样。只是将cmake改为MinGw了而已。另外验证是否成功安装的方式有所改变：</p>
 <figure class="highlight node-repl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs node-repl"><span class="hljs-meta prompt_">&gt;</span> <span class="language-javascript">gcc --version</span><br></code></pre></td></tr></table></figure>
 <h2 id="3-在vscode中安装c-c-、code-runner扩展"><a href="#3-在vscode中安装c-c-、code-runner扩展" class="headerlink" title="3.在vscode中安装c&#x2F;c++、code runner扩展"></a>3.在vscode中安装c&#x2F;c++、code runner扩展</h2><p>和上述过程一样。</p>
 <h2 id="4-创建文件夹-1"><a href="#4-创建文件夹-1" class="headerlink" title="4.创建文件夹"></a>4.创建文件夹</h2><p>和上述过程一样。注意文件夹的位置。</p>
 <h2 id="5-文件的编码问题-1"><a href="#5-文件的编码问题-1" class="headerlink" title="5.文件的编码问题"></a>5.文件的编码问题</h2><p>和上述要注意的点一样。</p>
-<h2 id="6-实际编写一个c-源文件与文件的运行"><a href="#6-实际编写一个c-源文件与文件的运行" class="headerlink" title="6.实际编写一个c++源文件与文件的运行"></a>6.实际编写一个c++源文件与文件的运行</h2><p>在打开一个文件夹后，可以直接在文件夹下面创建新的cpp文件，注意文件后缀即可。<br><img src="/img/demoa.png" srcset="/img/loading.gif" lazyload><br>这种运行方式与上面那种的运行方式的区别是，在launch.json中将externalconsole的值改为<code>true</code>之后，直接按<code>ctrl+f5</code>，可以调出有效的外部终端。更加符合我用vs的习惯。且不会有乱码、不显示的问题。当然，前面几个步骤需要做对。在写代码之前，最好就要把编码给设置好，以绝后患。<br><img src="/img/1207over.png" srcset="/img/loading.gif" lazyload><br>同样，这样的情况在一个文件夹里面写多个cpp文件，是完全可以运行的。且不用顾虑cmakelist的问题。我根本就不懂cmake啊，根本不懂理论。</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a><font size=6>总结</font></h1><p>这次的配置体验真的很折磨。很让人难忘。也让我意识到理论学习的重要性。要学习的东西真的还有很多。以及出问题的时候，搜索博客文章，或者依托英文社区，是很有用的两种办法。最后，至少写代码可以暂时告别臃肿的visual studio了！也刚好可以进入第二阶段了。<br><img src="/img/ly7.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="6-实际编写一个c-源文件与文件的运行"><a href="#6-实际编写一个c-源文件与文件的运行" class="headerlink" title="6.实际编写一个c++源文件与文件的运行"></a>6.实际编写一个c++源文件与文件的运行</h2><p>在打开一个文件夹后，可以直接在文件夹下面创建新的cpp文件，注意文件后缀即可。<br><img src="/img/pre/demo/demoa.png" srcset="/img/loading.gif" lazyload><br>这种运行方式与上面那种的运行方式的区别是，在launch.json中将externalconsole的值改为<code>true</code>之后，直接按<code>ctrl+f5</code>，可以调出有效的外部终端。更加符合我用vs的习惯。且不会有乱码、不显示的问题。当然，前面几个步骤需要做对。在写代码之前，最好就要把编码给设置好，以绝后患。<br><img src="/img/pre/num/1207over.png" srcset="/img/loading.gif" lazyload><br>同样，这样的情况在一个文件夹里面写多个cpp文件，是完全可以运行的。且不用顾虑cmakelist的问题。我根本就不懂cmake啊，根本不懂理论。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a><font size=6>总结</font></h1><p>这次的配置体验真的很折磨。很让人难忘。也让我意识到理论学习的重要性。要学习的东西真的还有很多。以及出问题的时候，搜索博客文章，或者依托英文社区，是很有用的两种办法。最后，至少写代码可以暂时告别臃肿的visual studio了！也刚好可以进入第二阶段了。<br><img src="/img/pre/ly/ly7.png" srcset="/img/loading.gif" lazyload></p>
 
                 
               </div>
@@ -400,7 +400,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年12月11日</div>
+          <div>2024年4月11日</div>
         </div>
       
       
