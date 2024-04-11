@@ -1,0 +1,716 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=dark>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/1.png">
+  <link rel="icon" href="https://stardewcommunitywiki.com/mediawiki/images/b/b2/Animals_Icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#e0e0e0">
+  <meta name="author" content="SpecterLLL">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="主要是重新认识“.vscode文件夹”。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="重新认识vscode">
+<meta property="og:url" content="https://spectrieu.github.io/2024/03/14/%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%86vscode/index.html">
+<meta property="og:site_name" content="LLL&#39;s Specter">
+<meta property="og:description" content="主要是重新认识“.vscode文件夹”。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://spectrieu.github.io/img/a/rc/11.png">
+<meta property="article:published_time" content="2024-03-14T04:18:01.000Z">
+<meta property="article:modified_time" content="2024-03-14T07:09:02.486Z">
+<meta property="article:author" content="SpecterLLL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://spectrieu.github.io/img/a/rc/11.png">
+  
+  
+  
+  <title>重新认识vscode - LLL&#39;s Specter</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"spectrieu.github.io","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":100},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>SpecterLLL&#39;s Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/a/rc/11.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="重新认识vscode"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-03-14 12:18" pubdate>
+          2024年3月14日 中午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.5k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          13 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">重新认识vscode</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>最近在学习算法，参考到<a target="_blank" rel="noopener" href="https://www.hello-algo.com/chapter_array_and_linkedlist/">这本书</a>，提供包括c语言在内的很多语言的源码，于我个人而言是很友好的。浙大的《数据结构》虽然看过几节课，但是觉得理解起来还是有很大难度，所以就准备以《hello算法》为主力，结合其它的课程或资料来进行练习。</p>
+<p>虽然配置了neovim，但是觉得在调试等层面，还是vscode更容易上手一些。lazyvim里面虽然内置了DAP插件，但是我目前打算规避一些过于“自定义”的操作，主要用neovim来编辑文件。</p>
+<p>回到vscode的时候，因为有了配置neovim的经验，在加上自己已经有一段时间浸润在各式各样的编程工具的环境中，所以就想着要不要重新去试着系统认识一下vscode呢？想起之前立志要使用neovim的原因，一部分是因为舒爽的编辑体验，另一部分则是受够了vscode的各式各样的报错，尤其是来自launch.json的报错，不能找到相应的文件等等。现在说起launch的报错，那种头昏感还是会从遥远的地方传过来。那个时候，对于编程需求的想象也很简单——就是编辑文件，然后编译，然后运行可执行文件。所以就没有怎么关心vscode的设计逻辑，而每次报错的时候，就过分依赖谷歌和chatgpt，这达不到对这个宣称“编辑进化”的编辑器的系统理解。最后受不了“稀奇古怪”的报错，想到的也是回应最简单的需求，而不是尝试系统理解一下当前使用的vscode编辑器。这有好有坏吧。所以有一段时间，我是彻底没有用vscode，而主要是以neovim+命令行，准确来说是neovide+lazyvim+命令行来完成一些编程练习的。</p>
+<p>之所以会重新使用vscode，原因之一是为了充分地利用《hello算法》所提供的源码，vscode终归是好上手一些，现在的重点是算法的学习，所以自己打算把neovim的配置暂时放一放；其二是觉得从长远来看，熟悉vscode的使用是很有必要的，不能因为一些初看上去很莫名其妙的报错，就一直逃避下去；其三则是经历了各式各样的配置和书籍阅读的积累，感觉自己的理解能力是提高了的，vscode的各种设计板块，应该不再显得那么密闭才是。</p>
+<p>这里就涉及到一本<a target="_blank" rel="noopener" href="https://book.douban.com/subject/35125617/">系统更新我对vscode认识的书</a>了，这篇博客主要也就是对这本书的一些内容的总结。尤其是在vscode中编写c&#x2F;c++而言。</p>
+<p>在vscode中编辑、编译、运行c&#x2F;c++源文件的时候，vscode往往会在当前的工作区，也就是文件夹下自动生成一个.vscode的子文件夹。在这个字文件夹下，视情况而定，往往会有三个json文件：tasks.json,launch.json,c_cpp_properties.json。下面就主要来介绍这三个文件。</p>
+<p>对于tasks.json的理解，就编译来举个例子。编译如果直接在命令行进行的话，需要写一条一定长度的命令。而在vscode中，利用tasks.json文件，把这个操作给自动化了。在整个工作区，只需要在顶部菜单栏-&gt;终端-&gt;运行任务，那么就会完成tasks.json里面所规定好了的命令。</p>
+<p>确实，只要有编译器，那就可以直接在命令行编译源文件了。但是这样有时候会有点麻烦，因为在一个文件夹下，可能有很多的源文件需要编译，那么就需要输入很多次命令，还需要考虑到有很多参数的情况下，这样命令都会很长。而vscode则通过tasks.json的配置，实现了在同一工作区，也就是同一文件夹下的源文件的更高效的编译。自动化。而且这个tasks.json不一定要自己写，如果按照了对应语言的相关插件，应该是会自动生成的。</p>
+<p>以下是tasks.json文件里，各项命令的基本说明：<br><img src="/img/config/vscode/1.png" srcset="/img/loading.gif" lazyload alt="图一"></p>
+<p>如果说task是针对源文件，就时刻是“编译时”来说的，那么launch.json，则是针对可执行文件，就时刻是”运行时“来说的。launch.json要做的是运行、调试可执行文件。</p>
+<p>以下是launch.json文件里，各项命令的基本说明：<br><img src="/img/config/vscode/2.png" srcset="/img/loading.gif" lazyload alt="图二"></p>
+<p>对比一下上面两张图，是不是一切都清晰起来了呢？注意最后这个“preLaunchTask”，后面跟着的，在调试之前要运行的任务，其实就是tasks.json里所规定的任务。名字是一样的。如果说，这里的task所完成的是编译的自动化，那么这里的启动文件，launch.json，则是完成的是调试的自动化。我们每次按的是f5（启动调试），其实就是以launch.json规定的方式来一次性自动处理调试的命令，调整设置相关的参数，这里被处理的对象，已经直接从由task.json处理的源文件，变成了可执行文件（因为prelaunchtask这一选项的存在，所以按f5,就会触发task）。这里的关键是调试&#x2F;加载——可执行文件。</p>
+<p>最后一个，则是c_cpp_properties.json文件了。c&#x2F;c++插件为c&#x2F;c++开发提供了丰富的设置项。相比于其它插件都是把设置项存储在vscode的settings.json文件中，c&#x2F;c++插件是通过c_cpp_properties.json文件来配置头文件、c++标准等设置项的。同样的，下图有更加详细的说明：<br><img src="/img/config/vscode/3.png" srcset="/img/loading.gif" lazyload alt="图三"></p>
+<hr>
+<p>最后，有一个小的自定义效果，在vscode中实现类neovide光标效果：<br><font size=3 face="华文新魏"></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/vscode/comments/11e66xh/i_made_neovide_alike_cursor_effect_on_vscode/">原帖</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1KC4y1X7w5/?spm_id_from=333.337.search-card.all.click&vd_source=0b2cce5c85d7cab9547060ef18123f80">b站up主介绍</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=fe_OtrSLAs0&ab_channel=MaxProgramming">youtuber演示</a></li>
+</ul>
+</font>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%BC%96%E8%BE%91%E5%99%A8/" class="category-chain-item">编辑器</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>重新认识vscode</div>
+      <div>https://spectrieu.github.io/2024/03/14/重新认识vscode/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>SpecterLLL</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年3月14日</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2024年3月14日</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2024/03/14/%E4%B8%80%E7%82%B9%E7%82%B9%E9%87%91%E9%98%81%E5%AF%BA/" title="一点点金阁寺">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">一点点金阁寺</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/02/19/%E6%97%A5%E5%BF%97-12/" title="日志40219">
+                        <span class="hidden-mobile">日志40219</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    
+      <script type="text/javascript">
+        var disqus_config = function() {
+          this.page.url = 'https://spectrieu.github.io/2024/03/14/%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%86vscode/';
+          this.page.identifier = '/2024/03/14/%E9%87%8D%E6%96%B0%E8%AE%A4%E8%AF%86vscode/';
+        };
+        Fluid.utils.loadComments('#disqus_thread', function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//' + 'llls-specter' + '.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', new Date());
+          (d.head || d.body).appendChild(s);
+        });
+      </script>
+    
+    <noscript>Please enable JavaScript to view the comments</noscript>
+  </div>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://github.com/specterlll" target="_blank" rel="nofollow noopener"><span>Github</span></a> <i class="iconfont icon-love"></i> <a href="https://www.douban.com/people/245828025/?_i=3828572AI-_IT7" target="_blank" rel="nofollow noopener"><span>Douban</span></a> <i class="iconfont icon-love"></i> <a href="https://www.reddit.com/user/lllspectre" target="_blank" rel="nofollow noopener"><span>Reddit</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+  
+<script src="/js/custom.js"></script>
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* 导航栏动�?*/
+#navbar {
+    transition: all 0.3s;
+    font-size: 1rem;
+  }
+  
+  .navbar .nav-item .nav-link {
+      display: block;
+      color: var(--navbar-text-color);
+      transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .navbar .nav-item .nav-link i {
+      font-size: 1rem;
+  }
+  
+
+ @font-face {
+  font-family: "iconfont"; /* Project id 4393592 */
+  src: url('//at.alicdn.com/t/c/font_4393592_qi4m7dw9v9o.woff2?t=1703839086091') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4393592_qi4m7dw9v9o.woff?t=1703839086091') format('woff'),
+       url('//at.alicdn.com/t/c/font_4393592_qi4m7dw9v9o.ttf?t=1703839086091') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mastodon-fill:before {
+  content: "\e767";
+}
+
+.icon-mastodon2:before {
+  content: "\e701";
+}
+
+.icon-mastodon3:before {
+  content: "\ec07";
+}
+
+.icon-logo-mastodon:before {
+  content: "\e9e0";
+}
+
+.icon-mastodon4:before {
+  content: "\ec0f";
+}
+
+.icon-mastodon:before {
+  content: "\f1ec";
+}

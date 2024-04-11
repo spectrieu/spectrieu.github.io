@@ -1,0 +1,734 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=dark>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/1.png">
+  <link rel="icon" href="https://stardewcommunitywiki.com/mediawiki/images/b/b2/Animals_Icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#e0e0e0">
+  <meta name="author" content="SpecterLLL">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="学习记录。(20231022-20231025)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="日志31025">
+<meta property="og:url" content="https://spectrieu.github.io/2023/10/25/%E6%97%A5%E5%BF%97-1/index.html">
+<meta property="og:site_name" content="LLL&#39;s Specter">
+<meta property="og:description" content="学习记录。(20231022-20231025)">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://spectrieu.github.io/img/pre/odd/blog1025.png">
+<meta property="article:published_time" content="2023-10-25T07:51:22.000Z">
+<meta property="article:modified_time" content="2024-04-11T03:17:20.895Z">
+<meta property="article:author" content="SpecterLLL">
+<meta property="article:tag" content="约阿什">
+<meta property="article:tag" content="米德">
+<meta property="article:tag" content="vim">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://spectrieu.github.io/img/pre/odd/blog1025.png">
+  
+  
+  
+  <title>日志31025 - LLL&#39;s Specter</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"spectrieu.github.io","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":100},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>SpecterLLL&#39;s Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/pre/odd/blog1025.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="日志31025"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-10-25 15:51" pubdate>
+          2023年10月25日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.1k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          18 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">日志31025</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="vim"><a href="#vim" class="headerlink" title="vim"></a><font size=6>vim</font></h1><p>10.22号，继续看了两节《MISSING SEMESTER OF YOUR CS EDUCATION》。第二讲是”Shell工具和脚本”，接触到了一些重要概念，如”for while……流程控制””脚本””shebang”（被执行的script开头的magic line，标明了脚本程序所在的路径，通过该路径来解释脚本语言，使shell知道如何运行这个脚本。有可移植性程度不同的写法）。第三讲是”vim和text editor”。老师对编辑器的阐释很简单易懂，就像写文章用到word一样，写代码语言也需要用到这种编辑器，代码的编辑器与写作文的工具的区别，很大程度上其实就是代码和作文之间的区别。这节，老师对vim，vi improved进行了简要的介绍，包括它的七种模式以及切换。提到vim，老师还特别强调了它的独特性，即它本身可以是一种编程语言，不同的键位组合会产生不同的效果，而你可以组合不同的效果，类似编程语言那样，真正达到<strong>与vim交互</strong>，而不仅仅是用vim来编写，<strong>编辑文件的速度可以与思考的速度相匹配</strong>。除此之外，也提到了一些基本术语——“tab””window”buffer”(文件缓存区)等。学时两小时。累计3h。</p>
+<p>10.23号，之前说好要配置vim，在以后的（cs）学习中尽量避免让手远离键盘。因此在这天配置了一下vim。安装倒是很顺利，需要简单地配置一下环境变量。但之后遇到了两个问题花费了我大量时间。一个powershell的终端识别不了<code>vim</code>命令，一个是<code>vim test.txt</code>命令总是打不开正确的文件，而是直接新建文档。针对第一个问题，可能是因为我在系统没有载入新的环境变量的前提下就直接使用powershell执行<code>vim</code>命令。在电脑添加了新的环境变量之后，需要先使用command shell在windows自带的终端中，执行相关命令，比如我执行了<code>vim -version</code>，以此顺利完成读入。之后，powershell也可以正常识别vim命令。针对第二个问题，则是很简单的路径问题。我的电脑中有多个桌面，test.txt所在的桌面处于terminal默认打开的路径的父目录中，而不是子目录。</p>
+<p>在问Full学长的时候，他提到了更推荐的<strong>neovim</strong>，相对于vim来说，它更加激进一些（尽管我现在不能充分理解这里激进的意思哈哈）。准备在做完vimtutor之后细究这一块。学时2h，累计学时5h。</p>
+<h1 id="行动理论"><a href="#行动理论" class="headerlink" title="行动理论"></a><font size=6>行动理论</font></h1><p>特纳老登上次还有一些没看完。之前他提了一下帕森斯1937年《社会行动的结构》，之后他讲到50年代帕森斯的<em>functional action theory</em>。这体现在1951《social system》中，我对此实在不是很熟悉，但里面帕森斯似乎有在精进一种行动类型学。具体的细节这里不展开，从二手到二手总是让我有些不自在。</p>
+<p>以前我一直都不太能明确充分展开<strong>行动理论</strong>与<strong>对行动的理论化</strong>的区别。与这种模糊性牵连在一起的，还有“是不是所有的社会学著作都有着对行动的理论化”。直观来看，好像是，毕竟没有一门社会科学是不关注到人的。但是呢，你也可以很清楚地看到，涂尔干很少会像韦伯那样，对行动本身进行十分概念化的分析，或者就其影响来看，很少有人把涂尔干看作是一个论行动的人，在对行动的概念进行梳理的时候，学者们也很少会追溯到涂尔干那里，相反，韦伯，帕森斯就往往是无法绕开的对象。所以，暂且不管什么行动理论，行动理论，目前在我看来，是一种对行动的理论化的特殊的组织方式。暂时不管它，我们去问更深刻的一个问题。即，社会学&#x2F;社会科学等于对行动的理论化吗？我们有很多诸如“把人带回来”的宣言纲领，但是，或许得承认，不同的社会理论的<strong>重心</strong>，侧靠在行动上的重心，一定有所不同。</p>
+<p>不要干脆地让对行动的理论化成为某种理论必然指涉的、固有的东西。这会磨削差异，制造混乱。没有差异，就没有秩序。有的理论家，突生是分析的重点，有的理论家，行动则是重点。突生与行动的关系，并不等同于唯物与唯心、社会与个人、客观与主观、结构与能动的关系，也不是纯然对立的关系，这一点首先得明确了。二者的差异，仅仅是理论论述逻辑的差异。你在阅读的时候，不一定可以说出来，但一定可以感受到，涂尔干与韦伯、帕森斯、舒茨、戈夫曼等人的区别。《<strong>宗教</strong>生活的基本形式》《社会<strong>分工</strong>论》，在直觉上，就和《日常生活的<strong>自我呈现</strong>》不一样。特纳的<em><strong>process</strong></em>用得很好，<em>processes of action and interaction among individuals</em>,<em>internal cognitive and deliberative processes of individual actors</em>,<em>processes by which humans actively construct their lines of conduct</em>。太好了，一个<em>process</em>就很明确地将对行动的理论化的重要特质说明白了。在对行动的理论化中，行动者是动态的，不是给定的（<em>given</em>）一系列特质,不是就很干脆很简单地被假定在某个<em>system</em>下面运行的。对于对行动的理论化来说，行动，不以像空间、时间那种形式作为给定的（公设）理论背景出现，而表现为对行动过程、意义建构过程的刻画——可以是舒茨式的，也可以是布迪厄式的，也可以是韦伯-帕森斯式的——以及这一刻画对后续理论研究的影响。</p>
+<p>补充一点的是，倘若关注突生，并不代表不关注到行动。而涂尔干本人的理论资源，也被包容在了帕森斯的行动理论中。所以，严格的对立是不可取的，但差异是需要建立起来的。</p>
+<p>特纳很正确地指出来，韦伯和帕森斯都过于心急，一完成了他们的行动类型学，就早早地从行动转向系统。与他们相比，齐美尔、米德、舒茨、布鲁默、加芬克尔、戈夫曼等人，在对行动过程&#x2F;行动意义的建构上就做得好得多。的确如此。但是有一点必须明确，即，涂尔干与帕森斯的区别，不同于帕森斯与米德的区别。</p>
+<p>之后，约阿什对特纳的文章做出了评论。果然是21世纪的实用主义大牛，评论一针见血。首先，把米德作为行为主义者，实在不妥；其次，并非所有的行动都是<em>deliberative</em>的，行动的基本结构，不一定是<em><strong>teleological</strong></em>的，由此援引实用主义和梅洛-庞蒂；三，特纳最终的方案，有些折中主义（<em>eclecticism</em>）——要不然怎么说特纳稳如老狗呢？但折中不一定是好的，尤其是当处理的理论间有着无法调和的对立时（<em>a difference in principle rather than degree</em>）。这几点批判，我都已经猜出来。而对特纳将交换论一方面同齐美尔联系在一起，一方面同马克思联系在一起的做法，约阿什也表示批评，借后者点明了特纳对马克思主义的行动传统——如“<em>work</em>”“<em>praxis</em>”的忽视。随后，约阿什指出了行动中“身体”的缺席，至少就特纳所做的工作来说。约阿什在《The Intersubjective Constitution of the Bode Image》有做出相关工作。</p>
+<p>最后值得一提的，是约阿什对米德的“社会”&#x2F;“社会行动”概念所作的解析。这里po出原文：</p>
+<blockquote>
+<p>Mead’s point is that he introduces the priority of the social not as a counterpart to the multitude of individual actions-as Durkheim does-but by way of a specific theory of action.For him,the social act allows,makes possible and stablizes individuation.</p>
+</blockquote>
+<h1 id="补充"><a href="#补充" class="headerlink" title="补充"></a><font size=6>补充</font></h1><p>10.24号一天都在医院照顾妈妈，10.25号中午回家睡了一觉。为了不产生一种断裂感，必须得写日志才行。保持记录。毕竟当时告诉自己，一旦开始，就不要停下。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%97%A5%E5%BF%97/" class="category-chain-item">日志</a>
+  
+  
+
+      </span>
+    
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%A1%8C%E5%8A%A8%E7%90%86%E8%AE%BA/" class="category-chain-item">行动理论</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E7%BA%A6%E9%98%BF%E4%BB%80/" class="print-no-link">#约阿什</a>
+      
+        <a href="/tags/%E7%B1%B3%E5%BE%B7/" class="print-no-link">#米德</a>
+      
+        <a href="/tags/vim/" class="print-no-link">#vim</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>日志31025</div>
+      <div>https://spectrieu.github.io/2023/10/25/日志-1/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>SpecterLLL</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年10月25日</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2024年4月11日</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/10/25/%E3%80%8A%E5%9B%BD%E7%8E%8B%E7%9A%84%E4%B8%A4%E4%B8%AA%E8%BA%AB%E4%BD%93%E3%80%8B%E5%AF%BC%E8%A8%80/" title="《国王的两个身体》导言">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">《国王的两个身体》导言</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/10/21/%E6%97%A5%E5%BF%97/" title="日志31021">
+                        <span class="hidden-mobile">日志31021</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    
+      <script type="text/javascript">
+        var disqus_config = function() {
+          this.page.url = 'https://spectrieu.github.io/2023/10/25/%E6%97%A5%E5%BF%97-1/';
+          this.page.identifier = '/2023/10/25/%E6%97%A5%E5%BF%97-1/';
+        };
+        Fluid.utils.loadComments('#disqus_thread', function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//' + 'llls-specter' + '.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', new Date());
+          (d.head || d.body).appendChild(s);
+        });
+      </script>
+    
+    <noscript>Please enable JavaScript to view the comments</noscript>
+  </div>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://github.com/specterlll" target="_blank" rel="nofollow noopener"><span>Github</span></a> <i class="iconfont icon-love"></i> <a href="https://www.douban.com/people/245828025/?_i=3828572AI-_IT7" target="_blank" rel="nofollow noopener"><span>Douban</span></a> <i class="iconfont icon-love"></i> <a href="https://www.reddit.com/user/lllspectre" target="_blank" rel="nofollow noopener"><span>Reddit</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+  
+<script src="/js/custom.js"></script>
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
