@@ -16,23 +16,23 @@
   <meta name="author" content="Spectrieu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="怎么说呢。有时候感觉自己思路还蛮怪的。">
+    <meta name="description" content="所以，我不再期待去雕刻什么。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="神奇">
-<meta property="og:url" content="https://spectrieu.github.io/2024/04/10/%E7%A5%9E%E5%A5%87/index.html">
+<meta property="og:title" content="世界">
+<meta property="og:url" content="https://spectrieu.github.io/2024/05/06/%E4%B8%96%E7%95%8C/index.html">
 <meta property="og:site_name" content="LLLSpectrieu">
-<meta property="og:description" content="怎么说呢。有时候感觉自己思路还蛮怪的。">
+<meta property="og:description" content="所以，我不再期待去雕刻什么。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://spectrieu.github.io/img/likes/desktop1.png">
-<meta property="article:published_time" content="2024-04-10T13:55:22.000Z">
-<meta property="article:modified_time" content="2024-04-20T10:14:44.748Z">
+<meta property="og:image" content="https://spectrieu.github.io/img/a/mgf/11.png">
+<meta property="article:published_time" content="2024-05-06T10:36:24.000Z">
+<meta property="article:modified_time" content="2024-05-06T10:56:10.458Z">
 <meta property="article:author" content="Spectrieu">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://spectrieu.github.io/img/likes/desktop1.png">
+<meta name="twitter:image" content="https://spectrieu.github.io/img/a/mgf/11.png">
   
   
   
-  <title>神奇 - LLLSpectrieu</title>
+  <title>世界 - LLLSpectrieu</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -184,13 +184,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/likes/desktop1.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/a/mgf/11.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle">神奇</span>
+            <span id="subtitle">世界</span>
           
         </div>
 
@@ -201,8 +201,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-04-10 21:55" pubdate>
-          April 10, 2024 pm
+        <time datetime="2024-05-06 18:36" pubdate>
+          May 6, 2024 pm
         </time>
       </span>
     
@@ -213,7 +213,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k words
+          3.5k words
         
       </span>
     
@@ -224,7 +224,7 @@
         
         
         
-          11 mins
+          30 mins
         
       </span>
     
@@ -265,33 +265,27 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">神奇</h1>
+            <h1 id="seo-header">世界</h1>
             
             
               <div class="markdown-body">
                 
-                <p>在家待了几天，前天晚上回来，回家没带电脑，就把平板带回去了，估摸着一个平板就够学了。当然实际上啥也没学。晚上回来的时候，和室友们吃了烧烤，吃到2点，聊天聊嗨到三点。所以躺一天也显得理所当然。今天还是睡了个懒床。中午打扫完卫生后，一时兴起，反正也没啥玩的，再加上四月出的好看新番已经追完了，就想着，要不再搞一个网站吧。这个博客想写点啥就写点啥，但估计以后投简历的时候不太合适。</p>
-<p>还是打算用hexo主题的框架，通过git来部署。本来以为会很简单的，结果还是遇到了很多大大小小的问题。不过大多都能在网上的基础教程里找到对应的解答，最难办的是这个报错：</p>
-<p><img src="/img/config/git/2.png" srcset="/img/loading.gif" lazyload></p>
-<p><code>hexo s</code>、<code>hexo g</code>，都没有问题，但唯独<code>hexo d</code>部署的时候出现了这种报错。即我的第一个github账户SpecterLLL没有新博客仓库的读写权限，然后还有spawn failed的报错。反复确认新旧仓库的公钥我都生成并已经粘贴到了各自账户的ssh keys中之后，我就想办法把我目前所用的Specter账户转变为新的spectrumzero账户，这样一来就应该可以顺利读写新的仓库了。</p>
-<p>因为对git一窍不通，所以在网上找了很多很多帖子。有说在git bash（或其它命令行界面）执行<code>git config --global user.name &quot;myname&quot;</code>和<code>git config --global user.email &quot;myemail&quot;</code>的，但是这一类操作(不论是否加上global，不论是否清除了全局配置)都行不通，没有根本的改动，依旧报一样的错误。然后也有帖子说需要在.ssh文件夹下配置config文件，如</p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs text">#默认账号，这里的id_rsa是旧账户所对应的公钥文件<br>Host github.com #别名<br>    HostName github.com #实际名<br>    User git<br>    IdentityFile ~/.ssh/id_rsa<br><br>#账号二,这里的zero是新账户所对应的公钥文件<br>Host spectrumzero.github.com<br>    HostName github.com<br>	  User git<br>	  IdentityFile ~/.ssh/zero<br></code></pre></td></tr></table></figure>
-<p>这里还有一些曲折的地方。就是我应该是在设置这里的config文件前，偶然间把id_rsa给覆盖了。在我只有一个博客的时候，我用的qq邮箱，我的新账户用的是谷歌邮箱，而我在创建新的秘钥的时候，没有给这个新邮箱的秘钥自主命名，导致覆盖了原有的公钥文件。反而我的qq邮箱的秘钥文件，我倒是自己命了名做了区分。</p>
-<p>在覆盖之后，新博客的问题居然解决了。当然我当时是感到很莫名其妙的。</p>
-<p>然而，当我回到旧的仓库，报错就变成了：</p>
-<p><img src="/img/config/git/5.png" srcset="/img/loading.gif" lazyload></p>
-<p>巨搞。所以还是回到了原点。</p>
-<p>之后，不管我怎么在第二个账号里做排列组合（换别名，换identityfile）都不管用。心灰意冷，想着要不要到git gui里面看看，然后发现这里的sshkey，一方面是只读的，一方面已经变为google邮箱。而之前我肯定是用的qq邮箱的。看到这一路径，为了恢复原样，理所当然地我就要去将这个对应的id_rsa给覆盖。所以拷贝了qq邮箱的秘钥文件，重命名为id_rsa并覆盖，果然在git gui里的sshkey变成了最初始的阶段。</p>
-<p><img src="/img/config/git/3.png" srcset="/img/loading.gif" lazyload><br><img src="/img/config/git/4.png" srcset="/img/loading.gif" lazyload></p>
-<p>这个时候，旧仓库的报错没有了！而问题原封不动地呈现在我面前：新仓库跟初始的报错一模一样！换而言之，我操作git的账户，又变回了SpecterLLL。</p>
-<p><img src="/img/config/git/2.png" srcset="/img/loading.gif" lazyload></p>
-<p>这就给我切换账户提供了一种思路，因为在config文件中，第一个账户的配置里的identityfile路径所指向的文件，恰恰就是git gui的那个默认路径文件。有没有一种可能，是我通过改变id_rsa，恰好就改变了第一个账户所指向的文件的内容？重点可能在第一个配置上，而账号二，则改不改都没有很大的意义?</p>
-<p>于是，我就试着将id_rsa换成了其它的公钥文件。id_rsa是我的qq秘钥，而zero则是我的谷歌秘钥，为了便于区分，我拷贝了一份id_rsa，并重命名为specter，以此作为旧仓库的秘钥。这样一来，我只需要改变第一个账户的配置，就可以完成账户的切换。最终结果也是如此。而第二个账号的配置，直接全部注释掉即可。</p>
-<p><img src="/img/config/git/1.png" srcset="/img/loading.gif" lazyload></p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs text">#默认账号，修改最后一行的specter为zero，即可完成切换，反之亦然。<br>Host github.com<br>    HostName github.com<br>    User git<br>    IdentityFile ~/.ssh/zero<br><br>#第二个新账号,注释掉<br>#Host spectrumzero.github.com<br>#	HostName github.com<br>#	User git<br>#	IdentityFile ~/.ssh/zero<br></code></pre></td></tr></table></figure>
+                <font face = "宋体">
 
-<p>至于spawn failed的报错，则在第一个问题解决后也不再发生，类似一种派生问题。</p>
-<p>思路虽然有点怪，但也算是解决了问题。git学起来！</p>
+<p>世界曾经像一块石头呈现在我面前，期待我去雕刻。这并不是说我具备着什么超人的力量，而仅仅是说，世界是一种外部。我在外部之外，我在自己内部。可能是巨大的岩群，只能以“轻微挪移”来形容自己的努力的，也可能是微小的石块，可以想踢走就踢走的。世界的最终根据就是它本身，而我的最终根据，可能是我的某些自我想象。二者就这样是截然不相干的东西，如此设想的我，还是很天真的认为，自己确实可以、需要给这个外部的世界带来什么。</p>
+<p>这与一种人生来的对于永恒的想象和追求有关，世界不仅仅是变动不居的，而且是永恒地变动不居的。不论是历史学的告诫，还是社会学的描刻，还是其它的什么逻辑，大概都加深了这一古老的信条。立论往往踩在另一些论点的尸体上，这些尸体一度诉说着一个静止的世界，但很快就被火焰、水、原子证明这样的设想实在是一种谬误，最后被现代的科学彻底遗忘。建立起来的新的关于世界的想象，很多都是一些关于世界的物质性的共识。被解剖的物质，被看见的物质，被体验的物质。外部物质，外部世界。这个外部的世界一刻不停地转动运行，对于人的有限生命来说，不论存不存在一种世界末日，世界总是更容易地被看作永恒的存在。人这样的追求无限的生物，如何甘心让死亡这样的事情一下子就毫无理由地剥夺自己的财产呢，他说，”我要刻下我存在的印记“，于是寄希望于向永恒的、自动运行的、外部的世界粘贴一份自我的标识，甚至特性。</p>
+<p>世界确实存在。我也可以感受到我的心跳。但果真世界是一种外部，那么是什么打开了窗户让我能感受到从世界那一边吹到的风？果真，世界像一瓶摆在我眼前的矿泉水，在我接触到里面的水之前，我必须要拧开瓶盖，那么，我如何具备一种关于“拧”的知识呢？饮水就是饮水，对我来说是不需要区分外与内的行动，我只需要再自然不过地拿起水瓶，瓶盖带给我的强或者弱的摩擦力我不去关心，因为一切都刚刚好。如果世界还是一瓶摆在我眼前的矿泉水，但里面的水被替换为一种药品，此时，我已经不再能像喝水一样娴熟地处理里面的液体。这个时候，我被世界拒绝了。这倒是在某些程度上验证了世界是一种外部的假设。然而，如果谁也不知道这里面的液体是什么，那么这个水瓶里的世界就不被任何人知道，这无异于将这个瓶子扔进一个迷雾的、没有任何人涉足的森林中，那么，这里面的液体对我、对于人来说，又有什么意义呢？它的确将自己置于一种超越性的环境中，但是诉诸的手段是未知，让自己保持未知是它的性质，但世界则一直向人传达一些信息，与前者相反，世界让自己暴露，让自己被体验、被探索、被谈论。世界是一种总是期待人们对它上手、拧开它、饮下它的东西。</p>
+<p>如果世界不是一种外部，那么它又是什么呢？还是可以分清楚，我是我，世界还是世界。在我行走的时候，我知道这一块街区是或者不是我的家乡，所以我会更随性或者更谨慎。我当然可以意识到，我遇到的人、建筑、字符，这些东西所构筑的世界显然不同于我的心灵。将杂乱的、尚属混沌的东西拿开，构成我心灵的，是一幅关于自己的自我图像，而不必然地与眼前所见的勾连起来。借助步行或者其它移动的手段，我所见的图景因为时空的存在而几乎是一刻不停地发生变化，同时我的自我图景却是稳定。而社会制度、风俗、法律、道德，各种潮流与知识，也显然是非个人的突生物，是集体历史的成果。我熟悉一部分，对另一部分感到陌生，所以，如果简要交代世界是一种内部，也是不恰当的断语。</p>
+<p>更具体一点。例如，音乐。音乐是一种很奇妙的东西，在很大程度上，它构成了我关于自我的图景。感受到音乐的美丽的一瞬间，也是感受到生活变得更加崭新的一瞬间，是感觉到自己变得更纯净、更立体的时刻。在这一瞬间，受到音乐的感召，会有一些闪亮的晶体从自己身上轻轻掉落，捡起来贴在胸前，会体悟那时所听到的旋律和节奏同样以其独有、唯有自己能领悟的方式在自己身体里运作，克制、温和、不失锐利。而这些并不完全关乎我自己，更准确地说，不完全关乎神秘的、通灵的、冥想式的体验，而更经常地与具体的行动连接。疲劳的身体和将近干涸的心灵，倒更容易领会那些不粗鲁直白地声明自己价值的、逃避简单秩序的泛灵藏品。人就是在这些时候拉近与奇迹的距离的。只是，这些晶体必然会随着时间的过去而暗淡下去，并成为很普通很普通的石头，或者另一个真理是，对于大部分的音乐来说，并没有这些瞬间产生。</p>
+<p>音乐，陌生的，熟悉的，自己不明白的，自己明白的，还有只有自己明白的。我想说的是，音乐是什么，世界就是什么。它传达一种永恒吗？可能有那么一首歌曲，它所传达的感动，那些瞬间可能几经暗淡，但伴随人的一生的说法却并不夸张。然而，在这之后，它便变为一颗很普通的石头或是什么怎样都无所谓的东西，因为闻者不再。它再次变成那些美丽的钻石的时候，是它再次被充满疑惑的人捡起来，用心感受的时候。它是一种外部或者一种内部吗？它大概仅仅在刻画一些关系，一些关系的可能性。它的确在那里，在某种音乐的平原或者国度，但并没有被密封住；它的确在这里，生活在人的“听”的禀赋中，但并不是太过轻易就能抓到的东西，不是被恩赐的一样静止的宝藏。它需要被追逐。</p>
+<p>我不再去问，世界是什么，而是去问，询问“世界是什么”这个询问过程本身，能够给我带来什么。当我问出这样的问题的时候，我对于”世界是什么“也有了答案。如果说这种询问本身所能带来的成果是富饶的，那么就说明世界与我的关系也是丰饶的，没错，要让世界牢固地被关系挂在我的身上，要让世界与我产生持续的、异质的连接。如果它不是曾经毫无理由地撼动过我的奇迹，却在这里傲慢地标榜自己是自成一体的，说教式地告诉我所做的任何事情都不具备意义，愤怒的我会将它驱逐出我所能设想的所有表象，从而抹除这种荒谬形态的世界。在我看来，直白和简要并非是一种罪，然而，倘若自身具备着所有这些与平淡相关的性质，同时却要将自己密封，用神秘做伪装，以拒绝来者的方式和态度来贬低和支配来者，那必然是一种僭越和愚蠢。</p>
+<p>世界，与我发生了联系才具备意义。当我占有它的那个时候，我才知道它是什么，才知道走到一个新位置的我又成为了什么。正如世界赋予我意义一样，我在赋予世界意义。世界之所以显得有意义，完全得益于我的天才、禀赋和轨迹。当我的心被世界所构筑，具备特定的伤痕、凹凸、各种各样轮廓的时候，世界才具备了一种真正的样子。即，世界迫切地要求我去理解它，而当我理解它的时候，我就抓住了、占有了、包住了它，一如球手占有球场一样。</p>
+<p>世界将诸多的可能性呈现在我面前，每一种可能性，不代表别的，仅仅代表我与它的关系的某一种可能性。契合的，断裂的，肯定的，否定的。漠然，无视，就不会产生关系。或许，这也是对人为什么不能是一种无所用心的动物的一个回答，因为他生来就在世界里，要与世界发生关系，所以，在这种原则上，他不被允许无所用心，不被允许是空洞的。而快乐，或者恐惧，这样那样有某“性”的情感，各种各样的欲望，本质上都是从我与世界的某一可能的关系中生产出来。自得与自在，喜悦与害怕，可以被变形为一组已知同未知的对立，自信一般来自娴熟的掌握，畏惧大多是对未知的畏惧，痛苦则多来自被驱逐出场的体验。</p>
+<p>重要的是，没有一种可能性是必然的可能性。这些可能性，全都是偶然的，或者是装成必然的偶然——据我们所知，具备这种功效的事物并不在少数。例如，社会——理解为民族国家、组织，场域、学校、大的小的，什么都可以——最擅长的东西，就是将一些任意性的东西加以象征符号，转换成为煞有介事的文化或传统，并对其信徒强调这些事物的深厚与不可动摇，甚至性别也不例外。这样的转换，最擅长将行动者贴上五花八门的、从一种社会理性的角度来讲的确无比真切的分类标签，并将粘贴好了这些标识符的行动者发配到一个固定的目的地，将人与世界的关系很轻易地固定下来。然而容易被我们忘记的是，社会理性最终服务于社会的再生产，而不是人本身的生活。不论多么歇斯底里地强调人是社会中的人，不论怎么对这一表达的模糊性卑鄙地加以利用，人的状态就只是人的状态，而不是社会的注脚或修辞。</p>
+<p>必须烧掉这样对于人生而言毫无意义的经文，无限的待阅的经文和待凿的巨石，是一切人生悲剧的起源。人只是在流浪，而不是被流放。必须要让可能性释放。远方的那些可能性，总在向我敞开怀抱，而我所位居的这些温暖的位置，总在这里温柔地保护我，存放着我那些最珍贵的东西。是我的“自我”的来源。当我向前奔跑的时候，曾经的轨迹总会跟在后面被我感受，如溅起来的积雨的湿漉，扬起来的砂砾的干燥。这些已然拥有的东西，悄悄地督促我，要经常记得敞开怀抱，大口呼吸，嗅到远方的气息，辨别那些值得付诸行动去到达的位置，而不要命定似地停留于此。我知道，不向前，就会被自己责怪。从我已经占领的地标出发，我不会败北，也不会害怕。前方存在着某些障碍，但不论是艰难的还是简易的，我最终都会越过。很简单，障碍既然以障碍的形式呈现在我眼前，说明它并没有以虚伪的神秘将自己包裹起来，于是，我便没有愤怒的理由。我更确定，障碍是我所欲求的、那个能以行动的付诸去实际逼近的世界向我发出的邀请。并不存在所谓的障碍，障碍只应作那个世界的某种特性去理解，当我遭遇障碍的时候，我就遭遇到了崭新的世界，它等待着我去挑战它，理解它，占有它。这就是我的表象。</p>
+<p>喜欢凉宫春日的表达，也喜欢长良和BACCANO!里的vino。vino说：</p>
+<p>“这个世界的所有一切都是我的。也许，整个世界都是我长长的梦。所以，你们也许就是幻影，因为我根本无法证明你们是否真的存在。总之，这个世界的一切都是以我为中心。如果我相信能够做到的事情，就一定能够做到。在我阳寿已尽，就要死的时候，不死药一定会出现的。如果我现在的梦醒来，我就会去做别的梦。总之，我是永存的。”</p>
+</font>
 
                 
               </div>
@@ -317,16 +311,6 @@
       </span>
     
   
-    
-      <span class="category-chain">
-        
-  <a href="/categories/git/" class="category-chain-item">git</a>
-  
-  
-
-      </span>
-    
-  
 </span>
 
     </div>
@@ -340,8 +324,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>神奇</div>
-      <div>https://spectrieu.github.io/2024/04/10/神奇/</div>
+      <div>世界</div>
+      <div>https://spectrieu.github.io/2024/05/06/世界/</div>
     </div>
     <div class="license-meta">
       
@@ -353,13 +337,13 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>April 10, 2024</div>
+          <div>May 6, 2024</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>Updated on</div>
-          <div>April 20, 2024</div>
+          <div>May 6, 2024</div>
         </div>
       
       
@@ -390,18 +374,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/05/06/%E4%B8%96%E7%95%8C/" title="世界">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">世界</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/04/04/%E5%BF%83/" title="心">
-                        <span class="hidden-mobile">心</span>
+                      <a href="/2024/04/10/%E7%A5%9E%E5%A5%87/" title="神奇">
+                        <span class="hidden-mobile">神奇</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
